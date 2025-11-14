@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{name}}'s Resume</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        body { 
+            font-family: 'Comic Sans MS', cursive, sans-serif; 
+            background-color: #fef9e7; 
+            color: #34495e;
+            padding: 20px;
+        }
+        .resume-container {
+            border: 3px dashed #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #e6e6e7;
+            max-width: 800px;
+            margin: auto;
+        }
+        h1 { color: #0b0a0a; }
+        h2 { color: #0f0f0e; }
+        ul { list-style-type: square; }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <h1>{{name}}</h1>
+        <p><strong>Email:</strong> {{email}}</p>
+        <p><strong>Phone:</strong> {{phone}}</p>
+
+        <h2>Education</h2>
+        <p>{{education}}</p>
+
+        <h2>Skills</h2>
+        <ul>
+            {{skills}}
+        </ul>
+
+        <h2>Experience</h2>
+        <p>{{experience}}</p>
+
+        <h2>Projects</h2>
+        <p>{{projects}}</p>
+
+        <h2>Hobbies</h2>
+        <p>{{hobbies}}</p>
+    </div>
+</body>
+</html>
